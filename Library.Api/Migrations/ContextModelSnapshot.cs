@@ -22,6 +22,55 @@ namespace Library.Api.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Library.Domain.Aggregates.Account.Account", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("AccessStatus")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("ActivationCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("EmailAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Nickname")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("PasswordAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("PhoneNumberAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Accounts");
+                });
+
             modelBuilder.Entity("Library.Domain.Aggregates.Book.Book", b =>
                 {
                     b.Property<Guid>("Id")
@@ -52,6 +101,46 @@ namespace Library.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("Library.Domain.Aggregates.Account.Account", b =>
+                {
+                    b.OwnsMany("Library.Domain.Aggregates.Account.Values.Device", "Devices", b1 =>
+                        {
+                            b1.Property<Guid>("AccountId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<Guid>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTime>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<string>("Name")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<DateTime>("OnlineAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<string>("Token")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.Property<string>("Version")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.HasKey("AccountId", "Id");
+
+                            b1.ToTable("Device");
+
+                            b1.WithOwner()
+                                .HasForeignKey("AccountId");
+                        });
+
+                    b.Navigation("Devices");
                 });
 #pragma warning restore 612, 618
         }
