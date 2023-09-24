@@ -17,7 +17,7 @@ public class BookController : Controller
     public BookController(IMediator mediator) => _mediator = mediator;
     
 
-    [AllowAnonymous, HttpGet("fetch")]
+    [Authorize, HttpGet("fetch")]
     public async Task<FetchBooksResponse> Fetch([FromQuery] int offset = 0, [FromQuery] int size = 20) => await _mediator.Send(new FetchBooksRequest(offset, size));
 
 
