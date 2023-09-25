@@ -49,9 +49,17 @@ public class SignInEmailRequestHandler : IRequestHandler<SignInEmailRequest, Sig
             var userAgent = _httpContextAccessor.HttpContext.Request.Headers.UserAgent.ToString();
 
             var operationSystem = UserAgentParser.GetOperatingSystem(userAgent);
+/*
+            if (account.Devices is null) account.Devices = new();
+            else
+            {
 
-            foreach(var device in account.Devices.Where(d => (DateTime) new JwtSecurityTokenHandler().ReadJwtToken(d.Token).Payload["exp"] <= DateTime.UtcNow)) 
-                account.Devices.Remove(device);
+                var deviceForRemove = account.Devices.Where(d => (long) new JwtSecurityTokenHandler().ReadJwtToken(d.Token).Payload["exp"] <= DateTime.UtcNow.Ticks).ToList();
+
+                var a = DateTime.UtcNow.Ticks;
+
+                //if (deviceForRemove.Count() > 0) foreach (var device in deviceForRemove) account.Devices.Remove(device);
+            }
 
             account.Devices.Add(new()
             {
@@ -62,7 +70,7 @@ public class SignInEmailRequestHandler : IRequestHandler<SignInEmailRequest, Sig
                 OnlineAt = DateTime.UtcNow,
                 CreatedAt = DateTime.UtcNow
             });
-
+*/
             await _accountRepo.UnitOfWork.SaveChangesAsync(cancellationToken);
 
             return new SignInResponse(Token: encodedJwt, Message: "Access true");
