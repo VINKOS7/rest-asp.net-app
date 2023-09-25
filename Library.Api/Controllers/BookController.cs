@@ -17,18 +17,18 @@ public class BookController : Controller
     public BookController(IMediator mediator) => _mediator = mediator;
     
 
-    [Authorize, HttpGet("fetch")]
+    [AllowAnonymous, HttpGet("fetch")]
     public async Task<FetchBooksResponse> Fetch([FromQuery] int offset = 0, [FromQuery] int size = 20) => await _mediator.Send(new FetchBooksRequest(offset, size));
 
 
-    [AllowAnonymous, HttpPost("add")]
+    [Authorize, HttpPost("add")]
     public async Task<Guid> Add([FromBody] AddBookRequest request) => await _mediator.Send(request);
 
 
-    [AllowAnonymous, HttpPost("change")]
+    [Authorize, HttpPost("change")]
     public async Task Change([FromBody] ChangeBookRequest request) => await _mediator.Send(request);
 
 
-    [AllowAnonymous, HttpDelete("delete")]
+    [Authorize, HttpDelete("delete")]
     public async Task Delete([FromQuery] Guid id) => await _mediator.Send(new DeleteBookByIdRequest(id));
 }

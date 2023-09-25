@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Library.Infrastructure
-build_property.ProjectDir = C:\Users\VINKOS\Desktop\ITPDevTest\back\Library\Library.Infrastructure\
+build_property.ProjectDir = C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Infrastructure\

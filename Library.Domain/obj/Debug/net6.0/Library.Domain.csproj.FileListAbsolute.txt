@@ -10,3 +10,15 @@ C:\Users\VINKOS\Desktop\ITPDevTest\back\Library\Library.Domain\obj\Debug\net6.0\
 C:\Users\VINKOS\Desktop\ITPDevTest\back\Library\Library.Domain\obj\Debug\net6.0\refint\Library.Domain.dll
 C:\Users\VINKOS\Desktop\ITPDevTest\back\Library\Library.Domain\obj\Debug\net6.0\Library.Domain.pdb
 C:\Users\VINKOS\Desktop\ITPDevTest\back\Library\Library.Domain\obj\Debug\net6.0\ref\Library.Domain.dll
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\bin\Debug\net6.0\Library.Domain.deps.json
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\bin\Debug\net6.0\Library.Domain.dll
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\bin\Debug\net6.0\Library.Domain.pdb
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\Library.Domain.csproj.AssemblyReference.cache
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\Library.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\Library.Domain.AssemblyInfoInputs.cache
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\Library.Domain.AssemblyInfo.cs
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\Library.Domain.csproj.CoreCompileInputs.cache
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\Library.Domain.dll
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\refint\Library.Domain.dll
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\Library.Domain.pdb
+C:\Users\VINKOS\Desktop\ITPDevTest\back\rest-asp.net-app\Library.Domain\obj\Debug\net6.0\ref\Library.Domain.dll

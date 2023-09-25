@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JRfzuSH7tp1MXcnSlCVdzLc3DcjDuQw/k9Ef3nUkS6Zi+DNnh1cAw8yLuji0bVyPc091I7xj842hz5RITQcpDQ==",
+  "dgSpecHash": "F1jFot1ns8smiwPAao3hkfhDcbsCCDAnVmxEE5Nf5OJh0+LNUftuaUTYBMLm7HZMdnDb2GyKl2YOysQkZl2Y1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\Library\\Library.Domain\\Library.Domain.csproj",
+  "projectFilePath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Domain\\Library.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VINKOS\\.nuget\\packages\\dotseed.domain\\0.1.1\\dotseed.domain.0.1.1.nupkg.sha512"
   ],

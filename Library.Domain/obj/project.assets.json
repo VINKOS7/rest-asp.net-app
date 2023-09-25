@@ -39,11 +39,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\Library\\Library.Domain\\Library.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Domain\\Library.Domain.csproj",
       "projectName": "Library.Domain",
-      "projectPath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\Library\\Library.Domain\\Library.Domain.csproj",
+      "projectPath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Domain\\Library.Domain.csproj",
       "packagesPath": "C:\\Users\\VINKOS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\Library\\Library.Domain\\obj\\",
+      "outputPath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
