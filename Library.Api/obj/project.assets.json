@@ -2245,11 +2245,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Api\\Library.Api.csproj",
+      "projectUniqueName": "C:\\Users\\VINKOS\\Desktop\\rest-asp.net-app\\Library.Api\\Library.Api.csproj",
       "projectName": "Library.Api",
-      "projectPath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Api\\Library.Api.csproj",
+      "projectPath": "C:\\Users\\VINKOS\\Desktop\\rest-asp.net-app\\Library.Api\\Library.Api.csproj",
       "packagesPath": "C:\\Users\\VINKOS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Api\\obj\\",
+      "outputPath": "C:\\Users\\VINKOS\\Desktop\\rest-asp.net-app\\Library.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2271,11 +2271,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Domain\\Library.Domain.csproj": {
-              "projectPath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Domain\\Library.Domain.csproj"
+            "C:\\Users\\VINKOS\\Desktop\\rest-asp.net-app\\Library.Domain\\Library.Domain.csproj": {
+              "projectPath": "C:\\Users\\VINKOS\\Desktop\\rest-asp.net-app\\Library.Domain\\Library.Domain.csproj"
             },
-            "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Infrastructure\\Library.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Infrastructure\\Library.Infrastructure.csproj"
+            "C:\\Users\\VINKOS\\Desktop\\rest-asp.net-app\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\VINKOS\\Desktop\\rest-asp.net-app\\Library.Infrastructure\\Library.Infrastructure.csproj"
             }
           }
         }

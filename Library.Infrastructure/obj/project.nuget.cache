@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uVNwy/1CZjeARVrUzYvkNvESymTEfEiP/UVNo5CecQjg8jplyf2eSFHbf8miIpx+TLKycMKki4IfEr+MX4doFQ==",
+  "dgSpecHash": "V5GS0i8EMpOv3+ttJtw06G7UQNj2JDthvupRbPDdEWtjjkGwh73GexlZuWJK5zTXCnRiFKf+zWhnYVJMeW5xhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VINKOS\\Desktop\\ITPDevTest\\back\\rest-asp.net-app\\Library.Infrastructure\\Library.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\VINKOS\\Desktop\\rest-asp.net-app\\Library.Infrastructure\\Library.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VINKOS\\.nuget\\packages\\dotseed.context\\0.1.2\\dotseed.context.0.1.2.nupkg.sha512",
     "C:\\Users\\VINKOS\\.nuget\\packages\\dotseed.domain\\0.1.1\\dotseed.domain.0.1.1.nupkg.sha512",
