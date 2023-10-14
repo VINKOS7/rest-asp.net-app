@@ -21,7 +21,7 @@ public class BookController : Controller
     public async Task<FetchBooksResponse> Fetch([FromQuery] int offset = 0, [FromQuery] int size = 20) => await _mediator.Send(new FetchBooksRequest(offset, size));
 
 
-    [Authorize, HttpPost("add")]
+    [AllowAnonymous, HttpPost("add")]
     public async Task<Guid> Add([FromBody] AddBookRequest request) => await _mediator.Send(request);
 
 

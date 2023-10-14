@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Library.Domain.Aggregates.Book;
 using Library.Domain.Aggregates.Book.Commands;
 using Library.Api.Responses;
+using Microsoft.AspNetCore.SignalR;
 
 namespace Library.Api.Requests;
 
@@ -30,4 +31,12 @@ public record FetchBooksRequest(
 ) 
 : IRequest<FetchBooksResponse>;
 
+public record FetchBooksParallelRequest(
+    [JsonProperty("offset")] int Offset,
+    [JsonProperty("size")] int Size
+)
+: IRequest
+{
+    public Func<Book, int, Task> Send;
+}
 public record DeleteBookByIdRequest([JsonProperty("id")] Guid Id) : IRequest;

@@ -18,7 +18,7 @@ public class FetchBooksRequestHandler : IRequestHandler<FetchBooksRequest, Fetch
     public async Task<FetchBooksResponse> Handle(FetchBooksRequest request, CancellationToken cancellationToken)
     {
         try
-        { 
+        {         
             var books = await _bookRepo.FetchAsync(request.Offset, request.Size);
 
             return new FetchBooksResponse(books.Select(b => new BookResponse(b)).ToList());

@@ -30,4 +30,35 @@ public class BookResponse
     public DateTime DateOfWritten { get; private set; }
 }
 
+public class BookParallelResponse
+{
+    public BookParallelResponse(Book book, int millisecondsTask)
+    {
+        Id = book.Id;
+        Name = book.Name;
+        Genre = book.Genre;
+        Author = book.Author;
+        DateOfWritten = book.DateOfWritten;
+        MillisecondsTask = millisecondsTask;
+    }
+
+    [JsonProperty("id")]
+    public Guid Id { get; private set; }
+
+    [JsonProperty("millisecondsTask")]
+    public int MillisecondsTask { get; private set; }
+
+    [JsonProperty("name")]
+    public string Name { get; private set; }
+
+    [JsonProperty("genre")]
+    public string Genre { get; private set; }
+
+    [JsonProperty("name")]
+    public string Author { get; private set; }
+
+    [JsonProperty("dateOfWritten")]
+    public DateTime DateOfWritten { get; private set; }
+}
+
 public record FetchBooksResponse([JsonProperty("books")] ICollection<BookResponse> Books);

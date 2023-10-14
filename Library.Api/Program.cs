@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using Library.Api.Extensions;
 using Library.Api.Options;
 using Microsoft.AspNetCore.HttpLogging;
+using Library.Api.Controllers.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    //options.AddSignalRSwaggerGen();
+});
+
 
 builder.Services.Configure<JWTOptions>(builder.Configuration.GetSection("JWTOptions"));
 
@@ -76,6 +81,12 @@ builder.Services.AddHttpLogging(logging =>
 
 });
 
+builder.Services.AddSignalR(hubOptions =>
+{
+    hubOptions.EnableDetailedErrors = true;
+    hubOptions.KeepAliveInterval = TimeSpan.FromSeconds(10);
+});
+
 builder.Services.ConfigureEntityFramework(builder.Configuration);
 builder.Services.ConfigureApplicationServices(builder.Configuration);
 builder.Services.ConfigureInfrastructureServices();
@@ -102,6 +113,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<BookHub>("/hub");
 
 app.RunMigrations(builder.Configuration);
 
