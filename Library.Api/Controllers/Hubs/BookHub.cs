@@ -24,8 +24,12 @@ public class BookHub : Hub
         await Clients.All.SendAsync("broadcastMessage", name, message);
     }
 
-    public async Task FetchParallel(int offset = 3, int size = 20)
+    public async Task FetchParallel(int offset = 0, int size = 20)
     {
+        if (size < 3) offset = 3;
+
+        if (size > 35) size = 35;
+
         var send = async (Book book, int mililiseconds) => await Clients.Caller.SendAsync("fetchBooks", new BookParallelResponse(book, mililiseconds));
 
         await _mediator.Send(new FetchBooksParallelRequest(offset, size) { Send = send });
